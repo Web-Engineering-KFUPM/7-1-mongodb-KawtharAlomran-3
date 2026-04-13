@@ -117,7 +117,7 @@
  *  - write your database username in place of HasanDB in the connection string.
  *  - write your database password in place of <db_password> in the connection string.
  *  - Run server: node server.js to test connection.
- * 
+ *
  * =====================================================
  * TODO-2 Define the schema of the DB
  * ===================================================== 
@@ -185,11 +185,14 @@
  */
 
 // import mongoose
+import mongoose from "mongoose";
 
 // establish connection
-
-
+mongoose.connect("mongodb+srv://Kawthar_db_user:Kawthar9@cluster0.9ojxw7t.mongodb.net/TestDB")
+.then(() => console.log("Connected to MongoDB"))
+.catch(err => console.log(err));
 // define schema
+
 
 
 // create document
